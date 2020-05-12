@@ -27,17 +27,40 @@
         android:layout_marginTop="@dimen/layout_margin"
         android:id="@+id/bio_scroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp">
 
-        <TextView
-            android:gravity="left"
-            android:padding="@dimen/small_padding"
-            android:id="@+id/textView2"
-            style="@style/NameStyle"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lineSpacingMultiplier="1.2"
-            android:text="@string/bio" />
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+                <TextView
+                    android:gravity="left"
+                    android:padding="@dimen/small_padding"
+                    android:id="@+id/textView2"
+                    style="@style/NameStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/bio" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ImageCroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/root"
+                app:srcCompat="@android:drawable/sym_def_app_icon" />
+        </LinearLayout>
+
+
 
     </ScrollView>
 </LinearLayout>
