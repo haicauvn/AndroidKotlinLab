@@ -77,24 +77,24 @@
         android:id="@+id/howtoPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="49dp"
         android:text="@string/how_to_play"
-        android:textSize="@dimen/box_text_size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boxTwo_text" />
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/instruction_Label"
+        app:layout_constraintEnd_toStartOf="@+id/instruction_Label"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/instruction_Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/text_info"
-        app:layout_constraintBottom_toBottomOf="@+id/howtoPlay"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/howtoPlay"
-        app:layout_constraintTop_toTopOf="@+id/howtoPlay" />
+        app:layout_constraintTop_toBottomOf="@+id/boxFive_text" />
 
     <Button
         android:id="@+id/button_red"
